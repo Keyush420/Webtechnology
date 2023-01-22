@@ -9,8 +9,8 @@
 }
 /*varaible*/
 :root{
-    --main-color:#e3e4e9;
-    --body-color:rgb(50, 148, 155);
+    --main-color:rgba(49, 9, 9, 0.267);
+    --body-color:white(50, 148, 155);
     --container-color:black;
     --heading-color:black;
     --box-color:black;
@@ -53,6 +53,51 @@ header{
 .logo{
     font-size: 1.2rem;
     font-weight:600 ;
-    color: var(--main-color);
+    color:rgb(0, 0, 0);
 }
+.navbar{
+    display: flex;
+    align-items: center;
+   
+    column-gap:1.5rem;
+}
+.navlink{
+    font-size: 0.94rem;
+    padding: 4px 8px;
+    border-radius:0.2rem;
+    color:var(--bg--color);
+}
+.navlink:hover{
+    color:var(--bg--color);
+    background-color: var(--bg--color);
+    transition: 0.3s all linear;
+}
+.menu-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    cursor: pointer;
+    z-index: 200;
+    transition: 0.3s;
+}
+.menu-icon div{
+    display:block;
+    background: black;
+    height: 2px;
+    width: 24px;
+    transition: 0.3s;
+}
+.move .line1{
+    transform: rotate(-45deg)translate(-5px,5px);
+}
+.move .line2{
+    opacity: 0;
+}
+.move .line3{
+    transform: rotate(45deg)translate(-5px,-5px);
+}
+
+
 
